@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<style type="text/css">
+			html,body
+			{
+				margin:0;
+				padding:0;
+				width:100%;
+				height:100%;
+			}
+			#plansza
+			{
+				width:400px;
+				height:400px;
+				margin:5% auto;
+				border:solid 2px black;
+				border-collapse:collapse;
+			}
+			#poleGL,#poleGS,#poleGP,#poleSL,#poleSS,#poleSP,#poleDL,#poleDS,#poleDP
+			{
+				width:calc(100%/3);
+				height:calc(100%/3);
+				border:solid 2px black;
+				border-collapse:collapse;
+				float:left;
+				text-align:center;
+				font-size:90px;
+			}
+			#poleSL,#poleDL
+			{
+				clear:both;
+			}
+			*
+			{
+				box-sizing:border-box;
+			}
+			#wygrana
+			{
+				text-align:center;
+				font-size:40px;
+			}
+		</style>
+	</head>
+	<body>
+		<script src="script.js"></script>
+		<div id="plansza">
+			<div id="poleGL" onclick="f1(this)"></div>
+			<div id="poleGS" onclick="f1(this)"></div>
+			<div id="poleGP" onclick="f1(this)"></div>
+			<div id="poleSL" onclick="f1(this)"></div>
+			<div id="poleSS" onclick="f1(this)"></div>
+			<div id="poleSP" onclick="f1(this)"></div>
+			<div id="poleDL" onclick="f1(this)"></div>
+			<div id="poleDS" onclick="f1(this)"></div>
+			<div id="poleDP" onclick="f1(this)"></div>
+		</div>
+		<p id="wygrana"></p>
+	</body>
+</html>
